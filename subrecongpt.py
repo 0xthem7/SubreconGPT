@@ -30,7 +30,6 @@ def generate_subdomains(subdomain, domain, api_key=None, mode=None):
                 raise e  # If it's a different kind of error, raise it
     else:
         subdomains = popen(f"opencode run 'Generate exactly 10 subdomains based on \"{subdomain}\" and return full domain names like subdomain.{domain}. Do not return only the subdomain part. Output only one full domain per line, no explanations or extra text.'").read()
-        print(subdomains)
         ai_generated_subdomains = [line.strip() for line in subdomains.splitlines() if line.strip()]
         return ai_generated_subdomains
 

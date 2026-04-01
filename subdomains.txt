@@ -1,0 +1,10 @@
+bughxcazoqtj.vulnweb.com
+bughxcazoqtj1.vulnweb.com
+bughxcazoqtj2.vulnweb.com
+bughxcazoqtj-dev.vulnweb.com
+bughxcazoqtj-test.vulnweb.com
+bughxcazoqtj-staging.vulnweb.com
+bughxcazoqtj-prod.vulnweb.com
+bughxcazoqtj-api.vulnweb.com
+bughxcazoqtj-web.vulnweb.com
+bughxcazoqtj-app.vulnweb.com

@@ -14,16 +14,34 @@ pip install openai
 
 - An OpenAI API key. You can obtain this from the OpenAI website.
 
+
+
+To install the free method without OpenAI, use the following command
+
+- Install the opencode 
+
+```bash 
+curl -fsSL https://opencode.ai/install | bash
+```
+
 ## Usage
 
 You can run the script from the command line like this:
 
 ```bash
-chaos -d yourdomain.com | python subrecongpt.py --apikey YOUR_OPENAI_API_KEY
+chaos -d yourdomain.com | python subrecongpt.py --mode openai --apikey YOUR_OPENAI_API_KEY
 ```
+
 Replace yourdomain.com with the domain you're investigating and YOUR_OPENAI_API_KEY with your actual OpenAI API key.
 
 This command will run Chaos on yourdomain.com, and then pipe the output into the Python script. The script will generate similar subdomains for each subdomain output by Chaos, and then attempt to resolve these new subdomains.
+
+
+When running without OpenAI, use the following command
+
+```bash
+subfinder -d yourdomain.com | python3 subrecongpt-test.py
+```
 
 ## Output
 For each input subdomain, the script will print out the AI's guesses for similar subdomains and whether each guess resolves:

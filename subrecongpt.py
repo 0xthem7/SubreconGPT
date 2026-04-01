@@ -64,7 +64,6 @@ def main():
         subdomain, domain = line.split('.', 1)  # Split the line into subdomain and domain
         print(f"\nSubdomain = {subdomain}.{domain}")
         new_subdomains = generate_subdomains(subdomain, domain, mode=args.mode, api_key=args.apikey )
-        print(new_subdomains)
         print(f"Guesses: {', '.join([sub.split('.')[0] for sub in new_subdomains])}\n")
         resolved_subdomains = resolve_subdomains(new_subdomains)
         time.sleep(1)  # Pause for 1 second
